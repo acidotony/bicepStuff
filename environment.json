@@ -1,0 +1,126 @@
+{
+    "sn-dev2": {
+        "name": "dev2",
+        "subscription": "JCPLC-MSDN-001",
+        "frontDoor": {
+            "name": "aj-fd-sn-dev2",
+            "resourceGroup": "rg-selectionnavigator-dev2-004",
+            "sku": "Premium_AzureFrontDoor",
+            "domain": "dev2.selectionnavigator.com"
+        },
+        "logAnalyticsWorkspace": "aj-law-sn-msdn-00103062025",
+        "keyVault": {
+            "name": "kv-sn-dev2-001aj0",
+            "resourceGroup": "rg-selectionnavigator-dev2-004"
+        },
+        "securityStorageAccount": {
+            "name": "stsndev2southeastasiaaj0",
+            "resourceGroup": "rg-selectionnavigator-dev2-004",
+            "container": "securityv2"
+        },
+        "cosmosDbAccount": {
+            "name": "aj-cdb-sn-dev2-001",
+            "resourceGroup": "rg-selectionnavigator-dev2-004"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-selectionnavigator-dev2-004"
+        },
+        "relay": "aj-relay-sn-msdn-03062025"
+    },
+    
+
+    "sn-shared-msdn":{
+        "name": "shared-msdn",
+        "subscription": "Visual Studio Enterprise Subscription",
+        "logAnalyticsWorkspace": "law-sn-msdn-001",
+        "keyVault": {
+            "name": "kv-sn-msdn-001",
+            "resourceGroup": "rg-selectionnavigator-dev2-001"
+        },
+        "relay": "relay-sn-msdn"
+    },
+    "sn-shared-prod":{
+        "name": "shared-prod",
+        "subscription": "JCPLC-PROD-001",
+        "logAnalyticsWorkspace": "law-sn-prod-001",
+        "relay": "relay-sn-prod"
+    },
+    "snc-dev": {
+        "name": "dev",
+        "subscription": "Visual Studio Enterprise Subscription",
+        "frontDoor": {
+            "name": "fd-sncompanion-dev",
+            "resourceGroup": "rg-sncompanion-dev-001",
+            "sku": "Standard_AzureFrontDoor"
+        },
+        "logAnalyticsWorkspace": "law-sn-msdn-001",
+        "keyVault": {
+            "name": "kv-sn-dev-101",
+            "resourceGroup": "rg-sncompanion-dev-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavdev",
+            "resourceGroup": "rg-selectionnavigator-dev-001",
+            "container": "easyparts"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-dev-101",
+            "resourceGroup": "rg-sncompanion-dev-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-sncompanion-dev-001"
+        }
+    },
+    "snc-qa": {
+        "name": "qa",
+        "subscription": "Visual Studio Enterprise Subscription",
+        "frontDoor": {
+            "name": "fd-sncompanion-qa",
+            "resourceGroup": "rg-sncompanion-qa-001",
+            "sku": "Standard_AzureFrontDoor"
+        },
+        "logAnalyticsWorkspace": "law-sn-msdn-001",
+        "keyVault": {
+            "name": "kv-sn-qa-101",
+            "resourceGroup": "rg-sncompanion-qa-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavqa",
+            "resourceGroup": "rg-selectionnavigator-qa-001",
+            "container": "easyparts"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-qa-101",
+            "resourceGroup": "rg-sncompanion-qa-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-sncompanion-qa-001"
+        }
+    },
+    "snc-prod": {
+        "name": "prod",
+        "subscription": "JCPLC-PROD-001",
+        "frontDoor": {
+            "name": "fd-sncompanion-prod",
+            "resourceGroup": "rg-sncompanion-prod-001",
+            "sku": "Standard_AzureFrontDoor"
+        },
+        "logAnalyticsWorkspace": "law-sn-prod-001",
+        "keyVault": {
+            "name": "kv-sn-prod-101",
+            "resourceGroup": "rg-sncompanion-prod-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavprod",
+            "resourceGroup": "rg-selectionnavigator-prod-001",
+            "container": "easyparts"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-prod-101",
+            "resourceGroup": "rg-sncompanion-prod-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-sncompanion-prod-001"
+        }
+    }
+}

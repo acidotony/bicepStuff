@@ -1,0 +1,264 @@
+{
+    "sn-dev2": {
+        "name": "dev2",
+        "subscription": "Visual Studio Enterprise Subscription",
+        "frontDoor": {
+            "name": "fd-sn-dev2",
+            "resourceGroup": "rg-selectionnavigator-shared-global-001",
+            "sku": "Premium_AzureFrontDoor",
+            "domain": "dev2.selectionnavigator26052025.com"
+        },
+        "logAnalyticsWorkspace": "law-sn-msdn-00103062025",
+        "keyVault": {
+            "name": "kv-sn-dev2-00103062025",
+            "resourceGroup": "rg-selectionnavigator-dev2-001"
+        },
+        "securityStorageAccount": {
+            "name": "stsndev2eastus203062025",
+            "resourceGroup": "rg-selectionnavigator-dev2-001",
+            "container": "securityv2"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-dev2-001",
+            "resourceGroup": "rg-selectionnavigator-dev2-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-selectionnavigator-dev2-001"
+        },
+        "relay": "relay-sn-msdn"
+    },
+    "sn-dev": {
+        "name": "dev",
+        "subscription": "Visual Studio Enterprise Subscription",
+        "frontDoor": {
+            "name": "fd-sn-dev",
+            "resourceGroup": "rg-selectionnavigator-dev-001",
+            "sku": "Premium_AzureFrontDoor",
+            "domain": "dev.selectionnavigator.com"
+        },
+        "logAnalyticsWorkspace": "law-sn-msdn-001",
+        "keyVault": {
+            "name": "kv-sn-dev-001",
+            "resourceGroup": "rg-selectionnavigator-dev-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavdev",
+            "resourceGroup": "rg-selectionnavigator-dev-001",
+            "container": "securityv2"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-dev-001",
+            "resourceGroup": "rg-selectionnavigator-dev-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-selectionnavigator-dev-001"
+        },
+        "relay": "relay-sn-msdn"
+    },
+    "sn-qa": {
+        "name": "qa",
+        "subscription": "Visual Studio Enterprise Subscription",
+        "frontDoor": {
+            "name": "fd-sn-qa",
+            "resourceGroup": "rg-selectionnavigator-qa-001",
+            "sku": "Premium_AzureFrontDoor",
+            "domain": "qa.selectionnavigator.com"
+        },
+        "logAnalyticsWorkspace": "law-sn-msdn-001",
+        "keyVault": {
+            "name": "kv-sn-qa-001",
+            "resourceGroup": "rg-selectionnavigator-qa-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavqa",
+            "resourceGroup": "rg-selectionnavigator-qa-001",
+            "container": "securityv2"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-qa-001",
+            "resourceGroup": "rg-selectionnavigator-qa-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-selectionnavigator-qa-001"
+        },
+        "relay": "relay-sn-msdn"
+    },
+    "sn-sit": {
+        "name": "sit",
+        "subscription": "JCPLC-PROD-001",
+        "frontDoor": {
+            "name": "fd-sn-sit",
+            "resourceGroup": "rg-selectionnavigator-sit-001",
+            "sku": "Premium_AzureFrontDoor",
+            "domain": "sit.selectionnavigator.com"
+        },
+        "logAnalyticsWorkspace": "law-sn-prod-001",
+        "keyVault": {
+            "name": "kv-sn-sit-001",
+            "resourceGroup": "rg-selectionnavigator-sit-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavsit",
+            "resourceGroup": "rg-selectionnavigator-sit-001",
+            "container": "securityv2"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-sit-001",
+            "resourceGroup": "rg-selectionnavigator-sit-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-selectionnavigator-sit-001"
+        },
+        "relay": "relay-sn-prod"
+    },
+    "sn-ppe": {
+        "name": "ppe",
+        "subscription": "JCPLC-PROD-001",
+        "frontDoor": {
+            "name": "fd-sn-ppe",
+            "resourceGroup": "rg-selectionnavigator-ppe-001",
+            "sku": "Premium_AzureFrontDoor",
+            "domain": "ppe.selectionnavigator.com"
+        },
+        "logAnalyticsWorkspace": "law-sn-prod-001",
+        "keyVault": {
+            "name": "kv-sn-ppe-001",
+            "resourceGroup": "rg-selectionnavigator-ppe-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavppe",
+            "resourceGroup": "rg-selectionnavigator-ppe-001",
+            "container": "securityv2"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-ppe-001",
+            "resourceGroup": "rg-selectionnavigator-ppe-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-selectionnavigator-ppe-001"
+        },
+        "relay": "relay-sn-prod"
+    },
+    "sn-prod": {
+        "name": "prod",
+        "subscription": "JCPLC-PROD-001",
+        "frontDoor": {
+            "name": "fd-sn-prod",
+            "resourceGroup": "rg-selectionnavigator-prod-001",
+            "sku": "Premium_AzureFrontDoor",
+            "domain": "www.selectionnavigator.com"
+        },
+        "logAnalyticsWorkspace": "law-sn-prod-001",
+        "keyVault": {
+            "name": "kv-sn-prod-001",
+            "resourceGroup": "rg-selectionnavigator-prod-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavprod",
+            "resourceGroup": "rg-selectionnavigator-prod-001",
+            "container": "securityv2"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-prod-001",
+            "resourceGroup": "rg-selectionnavigator-prod-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-selectionnavigator-dev2-001"
+        },
+        "relay": "relay-sn-prod"
+    },
+    "sn-shared-msdn":{
+        "name": "shared-msdn",
+        "subscription": "Visual Studio Enterprise Subscription",
+        "logAnalyticsWorkspace": "law-sn-msdn-001",
+        "keyVault": {
+            "name": "kv-sn-msdn-001",
+            "resourceGroup": "rg-selectionnavigator-dev2-001"
+        },
+        "relay": "relay-sn-msdn"
+    },
+    "sn-shared-prod":{
+        "name": "shared-prod",
+        "subscription": "JCPLC-PROD-001",
+        "logAnalyticsWorkspace": "law-sn-prod-001",
+        "relay": "relay-sn-prod"
+    },
+    "snc-dev": {
+        "name": "dev",
+        "subscription": "Visual Studio Enterprise Subscription",
+        "frontDoor": {
+            "name": "fd-sncompanion-dev",
+            "resourceGroup": "rg-sncompanion-dev-001",
+            "sku": "Standard_AzureFrontDoor"
+        },
+        "logAnalyticsWorkspace": "law-sn-msdn-001",
+        "keyVault": {
+            "name": "kv-sn-dev-101",
+            "resourceGroup": "rg-sncompanion-dev-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavdev",
+            "resourceGroup": "rg-selectionnavigator-dev-001",
+            "container": "easyparts"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-dev-101",
+            "resourceGroup": "rg-sncompanion-dev-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-sncompanion-dev-001"
+        }
+    },
+    "snc-qa": {
+        "name": "qa",
+        "subscription": "Visual Studio Enterprise Subscription",
+        "frontDoor": {
+            "name": "fd-sncompanion-qa",
+            "resourceGroup": "rg-sncompanion-qa-001",
+            "sku": "Standard_AzureFrontDoor"
+        },
+        "logAnalyticsWorkspace": "law-sn-msdn-001",
+        "keyVault": {
+            "name": "kv-sn-qa-101",
+            "resourceGroup": "rg-sncompanion-qa-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavqa",
+            "resourceGroup": "rg-selectionnavigator-qa-001",
+            "container": "easyparts"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-qa-101",
+            "resourceGroup": "rg-sncompanion-qa-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-sncompanion-qa-001"
+        }
+    },
+    "snc-prod": {
+        "name": "prod",
+        "subscription": "JCPLC-PROD-001",
+        "frontDoor": {
+            "name": "fd-sncompanion-prod",
+            "resourceGroup": "rg-sncompanion-prod-001",
+            "sku": "Standard_AzureFrontDoor"
+        },
+        "logAnalyticsWorkspace": "law-sn-prod-001",
+        "keyVault": {
+            "name": "kv-sn-prod-101",
+            "resourceGroup": "rg-sncompanion-prod-001"
+        },
+        "securityStorageAccount": {
+            "name": "stselnavprod",
+            "resourceGroup": "rg-selectionnavigator-prod-001",
+            "container": "easyparts"
+        },
+        "cosmosDbAccount": {
+            "name": "cdb-sn-prod-101",
+            "resourceGroup": "rg-sncompanion-prod-001"
+        },
+        "applicationInsights": {
+            "resourceGroup": "rg-sncompanion-prod-001"
+        }
+    }
+}

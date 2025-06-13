@@ -1,0 +1,11 @@
+{
+    "law-sn-msdn-00103062025": {
+    "name":          "law-sn-msdn-00103062025",
+    "resourceGroup": "rg-selectionnavigator-shared-msdn-001",
+    "subscription":  "c557b832-a26b-4729-a9f9-21adb21c3063"
+  },
+    "law-sn-prod-001": {
+        "name": "law-sn-prod-001",
+        "resourceGroup": "rg-selectionnavigator-shared-prod-001"
+    }
+}

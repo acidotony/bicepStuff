@@ -1,0 +1,154 @@
+{
+  "aj-relay-sn-msdn-03062025": {
+    "name": "aj-relay-sn-msdn-03062025",
+    "resourceGroup": "rg-selectionnavigator-dev2-004",
+    "hybridConnections": [
+      {
+        "name": "03062025corpsftp--nonprd-johnsoncontrols-com-22",
+        "hostname": "03062025corpsftp-nonprd.johnsoncontrols.com",
+        "port": 22
+      },
+      {
+        "name": "03062025relay-sn-msdn-tm-yw-clst1-dev-443",
+        "hostname": "03062025tm-yw-clst1-dev.jci.com",
+        "port": 443
+      }
+    ]
+  },
+  "relay-sn-prod": {
+    "name": "relay-sn-prod",
+    "resourceGroup": "rg-selectionnavigator-shared-prod-001",
+    "hybridConnections": [
+      {
+        "name": "corpsftp--nonprd-johnsoncontrols-com-22",
+        "hostname": "corpsftp-nonprd.johnsoncontrols.com",
+        "port": 22
+      },
+      {
+        "name": "corpsftp--prd-johnsoncontrols-com-22",
+        "hostname": "corpsftp-prd.johnsoncontrols.com",
+        "port": 22
+      },
+      {
+        "name": "relay-sn-prod-aomsweb80",
+        "hostname": "aomsweb",
+        "port": 80
+      },
+      {
+        "name": "relay-sn-prod-as-ahu-prod-jci-largo-order-api-443",
+        "hostname": "as-ahu-prod-jci-largo-order-api.azurewebsites.net",
+        "port": 443
+      },
+      {
+        "name": "relay-sn-prod-as-ahu-qa-jci-largo-order-api-443",
+        "hostname": "as-ahu-qa-jci-largo-order-api-hdfcbre7e3e7gebc.eastus2-01.azurewebsites.net",
+        "port": 443
+      },
+      {
+        "name": "relay-sn-prod-as-ahu-test-jci-largo-order-api-443",
+        "hostname": "as-ahu-test-jci-largo-order-api.azurewebsites.net",
+        "port": 443
+      },
+      {
+        "name": "relay-sn-prod-j030m02s-53605",
+        "hostname": "j030M02S.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-j030m02t-53605",
+        "hostname": "j030M02T.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-j030m02x-53605",
+        "hostname": "j030M02X.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-j030m07c-53605",
+        "hostname": "j030M07C.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-j030m07l-53605",
+        "hostname": "j030M07L.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-j030m07x-53605",
+        "hostname": "j030M07X.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-j030m0bk-53605",
+        "hostname": "J030M0BK.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-j030m1i4-80",
+        "hostname": "j030M1I4",
+        "port": 80
+      },
+      {
+        "name": "relay-sn-prod-j030m1ic-80",
+        "hostname": "j030M1IC",
+        "port": 80
+      },
+      {
+        "name": "relay-sn-prod-j030m4tev1n-53605",
+        "hostname": "j030M4TEV1N.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-j030m4tev1r-53605",
+        "hostname": "J030M4TEV1R.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-j030m4tev1s-53605",
+        "hostname": "J030M4TEV1S.go.johnsoncontrols.com",
+        "port": 53605
+      },
+      {
+        "name": "relay-sn-prod-kv-sn-ppe-001-443",
+        "hostname": "kv-sn-ppe-001.vault.azure.net",
+        "port": 443
+      },
+      {
+        "name": "relay-sn-prod-kv-sn-sit-001-443",
+        "hostname": "kv-sn-sit-001.vault.azure.net",
+        "port": 443
+      },
+      {
+        "name": "relay-sn-prod-prodgpv2mom-443",
+        "hostname": "prodgpv2mom.blob.core.windows.net",
+        "port": 443
+      },
+      {
+        "name": "relay-sn-prod-qagpv2mom-443",
+        "hostname": "qagpv2mom.blob.core.windows.net",
+        "port": 443
+      },
+      {
+        "name": "relay-sn-prod-smtp-cg-jci-com-25",
+        "hostname": "smtp.cg.jci.com",
+        "port": 25
+      },
+      {
+        "name": "relay-sn-prod-sn-ppe-sql-001-1433",
+        "hostname": "sn-ppe-sql-001.database.windows.net",
+        "port": 1433
+      },
+      {
+        "name": "relay-sn-prod-sn-prod-sql-001-1433",
+        "hostname": "sn-prod-sql-001.database.windows.net",
+        "port": 1433
+      },
+      {
+        "name": "relay-sn-prod-tm-yw-clst-prod-443",
+        "hostname": "tm-yw-clst-prod.jci.com",
+        "port": 443
+      }
+    ]
+  }
+}
