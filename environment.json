@@ -31,13 +31,13 @@
 
     "sn-shared-msdn":{
         "name": "shared-msdn",
-        "subscription": "Visual Studio Enterprise Subscription",
-        "logAnalyticsWorkspace": "law-sn-msdn-001",
+        "subscription": "JCPLC-MSDN-001",
+        "logAnalyticsWorkspace": "aj-law-sn-msdn-00103062025",
         "keyVault": {
-            "name": "kv-sn-msdn-001",
+            "name": "kv-sn-dev2-001aj0",
             "resourceGroup": "rg-selectionnavigator-dev2-001"
         },
-        "relay": "relay-sn-msdn"
+        "relay": "aj-relay-sn-msdn-03062025"
     },
     "sn-shared-prod":{
         "name": "shared-prod",

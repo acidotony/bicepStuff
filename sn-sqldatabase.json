@@ -1,0 +1,2662 @@
+[
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "ADU.Cache",
+    "group": "AppliedDX",
+    "name": "AppliedDX UPG Cache Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "adu"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "databaseName": "AHUFanData",
+    "group": "AHU",
+    "name": "AHU Fan Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "afn,ajf"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "databaseName": "AHUPricingData",
+    "group": "AHU",
+    "name": "AHU Pricing Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "apr"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "databaseName": "AHUShellData",
+    "group": "AHU",
+    "name": "AHU Shell Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ash"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "databaseName": "AHUValidationData",
+    "group": "AHU",
+    "name": "AHU Validation Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "avs"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "AppliedDX.SAP",
+    "group": "AppliedDX",
+    "name": "Applied DX SAP Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "adu,gry"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "AppliedDX.SFA",
+    "group": "AppliedDX",
+    "name": "Applied DX SFA Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "adu,ad,uoa,gry"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "AppliedEquipmentDatabase",
+    "group": "Common/Core",
+    "name": "Applied Equipment Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ae,aeop"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "dev2,dev"
+      }
+    ],
+    "maxSizeGB":[":5"]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "CBT.Database",
+    "group": "SysControls",
+    "name": "Controls Budget Tool Database (Cloud)",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "cbt"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Chillers.Cache",
+    "group": "Chillers",
+    "name": "Ratings Cache Database",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "crs,cuo,cbo,csbo"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ],
+    "maxSizeGB":[":250"]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "Chillers.CSPS.Database",
+    "group": "Chillers",
+    "name": "CSPS Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "cspsa,crs"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev,qa",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "sit,ppe"
+      }
+    ],
+    "maxSizeGB":[":100"]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "Chillers.CSPS.PricingLeadTime.Database",
+    "group": "Chillers",
+    "name": "CSPS PricingLeadTime Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "cspsa"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev,qa",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "Chillers.LineCard",
+    "group": "Chillers",
+    "name": "Chillers LineCard Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "chl,cra"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev,qa",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "sit,ppe"
+      }
+    ],
+    "maxSizeGB": [":100"]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Chillers.RatingMappings",
+    "group": "Chillers",
+    "name": "Rating Mappings Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "crs,cbo,cuo,cred,crear,crel,crex,creh,crei,creae,ccem,ccee,ccet,csbo"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Chillers.Xengine",
+    "group": "Chillers",
+    "name": "Xengine Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "crex"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "ChillersDatabase",
+    "group": "Chillers",
+    "name": "Chillers Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "chl,cra"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Chillers",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ],
+    "maxSizeGB": [":250"]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "ContractHistorical",
+    "group": "SysControls",
+    "name": "Contract Historical Database (Cloud)",
+    "type": "",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "cbt,cha"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "ControllerSelectionTool",
+    "group": "SysControls",
+    "name": "Controller Selection Tool Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "cnst"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "DocumentGeneration",
+    "group": "Document Generation",
+    "name": "Document Generation Database (Cloud)",
+    "type": "transactional",
+    "primaryLocation": "southeastasia",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "dg"
+      },
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "dgb,ddf,dgbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_execute,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "DocUpdateEngine",
+    "group": "Document Generation",
+    "name": "Doc Update Engine Database (Cloud)",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "due"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_execute,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "EcrionEngine",
+    "group": "Document Generation",
+    "name": "Ecrion Engine Database (Cloud)",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter",
+        "appList": "ee,eebp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.DocumentEngine",
+    "group": "Edge",
+    "name": "Edge DocumentEngine Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Envirco",
+    "group": "Edge",
+    "name": "Edge Envirco Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Envirco.Discounts",
+    "group": "Edge",
+    "name": "Edge Envirco Discounts Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Krueger",
+    "group": "Edge",
+    "name": "Edge Krueger Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Krueger.Discounts",
+    "group": "Edge",
+    "name": "Edge Krueger Discounts Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Pennbarry",
+    "group": "Edge",
+    "name": "Edge Pennbarry Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Pennbarry.Discounts",
+    "group": "Edge",
+    "name": "Edge Pennbarry Discounts Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Ruskin",
+    "group": "Edge",
+    "name": "Edge Ruskin Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Ruskin.Discounts",
+    "group": "Edge",
+    "name": "Edge Ruskin Discounts Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.SuperiorRex",
+    "group": "Edge",
+    "name": "Edge SuperiorRex Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Titus",
+    "group": "Edge",
+    "name": "Edge Titus Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.Titus.Discounts",
+    "group": "Edge",
+    "name": "Edge Titus Discounts Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.TNB",
+    "group": "Edge",
+    "name": "Edge TNB Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.TNB.Discounts",
+    "group": "Edge",
+    "name": "Edge TNB Discounts Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.YorkFans",
+    "group": "Edge",
+    "name": "Edge YorkFans Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Edge.YorkFans.Discounts",
+    "group": "Edge",
+    "name": "Edge YorkFans Discounts Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "edge,eo,edbp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "EspPackage",
+    "group": "AppliedDX",
+    "name": "ESP Package Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "adu"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "EstimateReference",
+    "group": "Estimating",
+    "name": "Estimate Reference Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "est,ea"
+      },
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "est"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_execute,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "ExcelGeneration",
+    "group": "Document Generation",
+    "name": "Excel Generation Database (Cloud)",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "eg"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_execute,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "FactoryPackageControls",
+    "group": "SysControls",
+    "name": "Factory Package Controls Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "fpc,fpcdg"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "FDB_Library",
+    "group": "SysControls",
+    "name": "Product Selection Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ps,fd"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ],
+    "computeSettings": {
+      "name": "GP_S_Gen5",
+      "tier": "GeneralPurpose",
+      "family": "Gen5",
+      "capacity": 8,
+      "minCapacity": "1",
+      "autoPauseDelayMinutes": 60
+    },
+    "maxSizeGB": [":250"]
+  },
+  {
+    "locations": [
+      "southeastasia"
+    ],
+    "environments": [
+      "dev2",
+      "dev"
+    ],
+    "databaseName": "FDB_Library_Test",
+    "group": "SysControls",
+    "name": "Product Selection Test Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "appList": "ps,fd",
+        "roleList": "db_datareader,db_execute",
+        "envList": "dev2,dev"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      }
+    ],
+    "computeSettings": {
+      "name": "GP_S_Gen5",
+      "tier": "GeneralPurpose",
+      "family": "Gen5",
+      "capacity": 8,
+      "minCapacity": "1",
+      "autoPauseDelayMinutes": 60
+    }
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Gryphon",
+    "group": "AppliedDX",
+    "name": "Gryphon Database",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "gry,adu"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "ItemImport",
+    "group": "Estimating",
+    "name": "Item Import Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "iis"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Estimating",
+        "roleList": "db_datareader,db_execute,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Estimating",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "FireDetection",
+    "group": "Fire Detection",
+    "name": "Fire Detection Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "fda"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "JCDSEngine",
+    "group": "Document Generation",
+    "name": "JCDS Database (Cloud)",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "jcdse,jcdsebp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_execute,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "LargoTerminal",
+    "group": "Edge",
+    "name": "Largo Terminal Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "lar"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Edge",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "MasterDataManagement",
+    "group": "AppliedDX",
+    "name": "MDM Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "adu,uoa"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "MergePdfEngine",
+    "group": "Document Generation",
+    "name": "Merge PDF Engine Database (Cloud)",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "mpe,mpebp"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_execute,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "NxTrendCatalog",
+    "group": "AppliedDX",
+    "name": "NxTrendCatalog Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "adu,uoa"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "OrderDatabase",
+    "group": "Common/Core",
+    "name": "Order Database",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute,db_datawriter",
+        "appList": "co,coa"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      },
+      {
+        "groupList": "SelNav-Azure-DataAnalytics-DevTest",
+        "roleList": "db_datareader,db_execute",
+        "envList": "dev,qa"
+      },
+      {
+        "groupList": "SelNav-Azure-DataAnalytics-Prod",
+        "roleList": "db_datareader,db_execute",
+        "envList": "prod"
+      }
+    ],
+    "maxSizeGB": [":50"]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "PointScheduleMatrix",
+    "group": "SysControls",
+    "name": "Point Schedule Matrix Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "psm"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "ProdCharacteristicsRules",
+    "group": "AppliedDX",
+    "name": "PCR Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "adu,ad,uoa,gry"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "ProductApplicationSelector.Database",
+    "group": "Common/Core",
+    "name": "Product Application Selector Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "pas"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_execute,db_viewdefinition,db_datawriter",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "ProductDocumentation",
+    "group": "Common/Core",
+    "name": "Product Documentation Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "pda"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core,SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "RatingPlateData",
+    "group": "AppliedDX",
+    "name": "Rating Plate Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "adu,gry"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "ResidentialData",
+    "group": "AppliedDX",
+    "name": "Residential Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "adu"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Series100",
+    "group": "AppliedDX",
+    "name": "Series 100 Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ad"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "Shared.Airside",
+    "group": "AppliedDX",
+    "name": "Shared Airside Database (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ad"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-AppliedDX",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "SpecialPricingRequests",
+    "group": "Common/Core",
+    "name": "Special Pricing Requests Database",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "spr"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      },
+      {
+        "groupList": "SelNav-Azure-DataAnalytics-DevTest",
+        "roleList": "db_cdc,db_datareader",
+        "envList": "dev,qa"
+      },
+      {
+        "groupList": "SelNav-Azure-DataAnalytics-Prod",
+        "roleList": "db_cdc,db_datareader",
+        "envList": "prod"
+      }
+    ],
+    "maxSizeGB": [":100"]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SpecialRequest",
+    "group": "Common/Core",
+    "name": "Special Requests Database",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_datawriter,db_execute",
+        "appList": "sr"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-Core,SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_datawriter,db_execute,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-Core,SelNav-Azure-AppDev-AHU",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ],
+    "maxSizeGB": [":10","prod:50"]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_Configurable_Demo",
+    "group": "SysControls",
+    "name": "SST Configurable Demo (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "SST_DocumentGeneration",
+    "group": "SysControls",
+    "name": "System Selection DocGen Database (Cloud)",
+    "type": "transactional",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_FireSec_Access_Control",
+    "group": "SysControls",
+    "name": "SST FireSec Access Control (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_FireSec_CCTV",
+    "group": "SysControls",
+    "name": "SST FireSec CCTV (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_FireSec_FIRE",
+    "group": "SysControls",
+    "name": "SST FireSec FIRE (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_FireSec_Intrusion",
+    "group": "SysControls",
+    "name": "SST FireSec Intrusion (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_FireSec_Simplex",
+    "group": "SysControls",
+    "name": "SST FireSec Simplex (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_ABCS_BACnet",
+    "group": "SysControls",
+    "name": "SST HVAC ABCS BACnet (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_ABCS_Network",
+    "group": "SysControls",
+    "name": "SST HVAC ABCS Network (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_BACnet",
+    "group": "SysControls",
+    "name": "SST HVAC BACnet (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_CCS",
+    "group": "SysControls",
+    "name": "SST HVAC CCS (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_CES",
+    "group": "SysControls",
+    "name": "SST HVAC CES (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_CMS",
+    "group": "SysControls",
+    "name": "SST HVAC CMS (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_Critical_Environments",
+    "group": "SysControls",
+    "name": "SST HVAC Critical Environments (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_Custom",
+    "group": "SysControls",
+    "name": "SST HVAC Custom (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_Custom_Panel",
+    "group": "SysControls",
+    "name": "SST HVAC Custom Panel (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_Flexsys",
+    "group": "SysControls",
+    "name": "SST HVAC Flexsys (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_LON",
+    "group": "SysControls",
+    "name": "SST HVAC LON (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_MEMs",
+    "group": "SysControls",
+    "name": "SST HVAC MEMs (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_Network",
+    "group": "SysControls",
+    "name": "SST HVAC Network (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_SCC",
+    "group": "SysControls",
+    "name": "SST HVAC SCC (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_TEC",
+    "group": "SysControls",
+    "name": "SST HVAC TEC (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_HVAC_Verasys",
+    "group": "SysControls",
+    "name": "SST HVAC Verasys (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_ModelGroupMaster",
+    "group": "SysControls",
+    "name": "SST ModelGroupMaster (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "databaseName": "SST_Ref_Industrial",
+    "group": "SysControls",
+    "name": "SST Ref Industrial (Cloud)",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "ss"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  },
+  {
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "databaseName": "VideoBandwidthConfigurator",
+    "group": "SysControls",
+    "name": "Video Bandwidth Configurator Database",
+    "type": "reference",
+    "appAccess": [
+      {
+        "roleList": "db_datareader,db_execute",
+        "appList": "vbc"
+      }
+    ],
+    "groupAccess": [
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_execute,db_datawriter,db_viewdefinition",
+        "envList": "dev2,dev",
+        "permissionList": "SHOWPLAN"
+      },
+      {
+        "groupList": "SelNav-Azure-AppDev-SysControls",
+        "roleList": "db_datareader,db_viewdefinition",
+        "envList": "qa,sit,ppe"
+      }
+    ]
+  }
+]

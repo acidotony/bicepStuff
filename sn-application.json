@@ -1,0 +1,1526 @@
+[
+  {
+    "name": "AHU Attenuator Services",
+    "additionalRoutes": [
+      "/AHUAttenuatorServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "aas",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AHU Air Blender Services",
+    "additionalRoutes": [
+      "/AHUAirBlenderServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "abs",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "DS Coil Rater",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "AppliedDX",
+    "abbr": "acr",
+    "type": "app",
+    "aspIndex": 6
+  },
+  {
+    "name": "AHU Coil Services",
+    "additionalRoutes": [
+      "/AHUCoilServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "acs",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "Applied DX",
+    "additionalRoutes": [
+      "/AppliedDX"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "AppliedDX",
+    "abbr": "ad",
+    "type": "app",
+    "aspIndex": 6,
+    "hybridConnections": [ { "port": 25, "hostname": "smtp.cg.jci.com" } ]
+  },
+  {
+    "name": "Admin",
+    "additionalRoutes": [
+      "/Admin"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "adm",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "AHU Document Services",
+    "additionalRoutes": [
+      "/AHUDocumentServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "ads",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "Applied DX UPG",
+    "additionalRoutes": [
+      "/Unitary"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "AppliedDX",
+    "abbr": "adu",
+    "type": "app",
+    "aspIndex": 6,
+    "hybridConnections": [ { "port": 25, "hostname": "smtp.cg.jci.com" } ]
+  },
+  {
+    "name": "Applied Equipment",
+    "additionalRoutes": [
+      "/AppliedEquipment"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "ae",
+    "type": "app",
+    "aspIndex": 6
+  },
+  {
+    "name": "AHU Electric Heater Services",
+    "additionalRoutes": [
+      "/AHUElectricHeaterServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "aeh",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "Applied Equipment Ordering",
+    "additionalRoutes": [
+      "/AppliedEquipmentOrdering"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "aeo",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Applied Equipment Ordering Processor",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Common/Core",
+    "abbr": "aeop",
+    "type": "functionapp",
+    "aspIndex": 4,
+    "hybridConnections": [
+      { "hostname": "corpsftp-nonprd.johnsoncontrols.com", "port": 22, "filters": [ "dev2", "dev", "qa", "sit", "ppe" ] },
+      { "hostname": "corpsftp-prd.johnsoncontrols.com", "port": 22, "filters": [ "prod" ] }
+    ]
+  },
+  {
+    "name": "AHU EBM Papst Services",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "aep",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "AHU Energy Recovery Services",
+    "additionalRoutes": [
+      "/AHUEnergyRecoveryServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "aer",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AHU Electrical Services",
+    "additionalRoutes": [
+      "/AHUElectricalServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "aes",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AHU Filter Services",
+    "additionalRoutes": [
+      "/AHUFilterServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "afl",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AHU Fan Services",
+    "additionalRoutes": [
+      "/AHUFanServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "afn",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AHU Gas Heater Services",
+    "additionalRoutes": [
+      "/AHUGasHeaterServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "agh",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AHU Humidifier Services",
+    "additionalRoutes": [
+      "/AHUHumidifierServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "ahs",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AHU Indeeco Rating Service",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "air",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "AHU InnergyTech Services",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "ait",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "AHU JCI Coil Services",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "ajc",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "AHU JCI Fan Rating Services",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "ajf",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "AHU Mixing Segment Services",
+    "additionalRoutes": [
+      "/AHUMixingSegmentServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "ams",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AOMS Order API",
+    "additionalRoutes": [
+      "/AOMSOrderAPI"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Common/Core",
+    "abbr": "aoa",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "AHU Order Services",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "aor",
+    "type": "app",
+    "aspIndex": 2,
+    "hybridConnections": [
+      { "hostname": "testgpv2mom.blob.core.windows.net", "port": 443, "filters": [ "dev2", "dev" ] },
+      { "hostname": "qagpv2mom.blob.core.windows.net", "port": 443, "filters": [ "qa", "sit" ] },
+      { "hostname": "prodgpv2mom.blob.core.windows.net", "port": 443, "filters": [ "ppe", "prod" ] }
+    ]
+  },
+  {
+    "name": "AHU Opening Services",
+    "additionalRoutes": [
+      "/AHUOpeningServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "aos",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AHU Pricing Service",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "apr",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "AOMS Quote Cache",
+    "additionalRoutes": [
+      "/"
+    ],
+    "locations": [
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "aqc",
+    "type": "app"
+  },
+  {
+    "name": "AHU Score",
+    "additionalRoutes": [
+      "/AHUScore"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "asc",
+    "type": "app",
+    "aspIndex": 6,
+    "appInsightsDataCap": [
+      "prod:20"
+    ],
+    "hybridConnections": [
+      { "hostname": "testgpv2mom.blob.core.windows.net", "port": 443, "filters": [ "dev2", "dev" ] },
+      { "hostname": "qagpv2mom.blob.core.windows.net", "port": 443, "filters": [ "qa", "sit" ] },
+      { "hostname": "prodgpv2mom.blob.core.windows.net", "port": 443, "filters": [ "ppe", "prod" ] }
+    ]
+  },
+  {
+    "name": "AHU Shell Services",
+    "additionalRoutes": [
+      "/AHUShellServices"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "ash",
+    "type": "app",
+    "aspIndex": 2
+  },
+  {
+    "name": "AHU TwinCity Services",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "atc",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "AHU Validation Service",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "avs",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "AHU Weight Services",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "aws",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "AHU Air Exchange Services",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "axs",
+    "type": "functionapp",
+    "aspIndex": 3
+  },
+  {
+    "name": "Batch Rating Orchestrator",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "cbo",
+    "type": "functionapp",
+    "aspIndex": 2,
+    "appInsightsDataCap": [
+      "prod:20"
+    ],
+    "preWarmedInstanceCount": 5
+  },
+  {
+    "name": "Controls Budget Tool (Cloud)",
+    "additionalRoutes": [
+      "/CBT"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "cbt",
+    "type": "app",
+    "aspIndex": 3
+  },
+  {
+    "abbr": "ccee",
+    "aspIndex": 0
+  },
+  {
+    "name": "MStandards Calc Engine",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "ccem",
+    "type": "functionapp",
+    "aspIndex": 1
+  },
+  {
+    "abbr": "ccet",
+    "aspIndex": 0
+  },
+  {
+    "name": "Contract Historical API",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "cha",
+    "type": "app",
+    "aspIndex": 3
+  },
+  {
+    "name": "Chillers Selection Tool",
+    "additionalRoutes": [
+      "/Chillers"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Chillers",
+    "abbr": "chl",
+    "type": "app",
+    "aspIndex": 4
+  },
+  {
+    "name": "Controller Selection Tool",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "cnst",
+    "type": "app",
+    "aspIndex": 3
+  },
+  {
+    "name": "Common Ordering",
+    "additionalRoutes": [
+      "/CommonOrdering"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Common/Core",
+    "abbr": "co",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Common Ordering API",
+    "additionalRoutes": [
+      "/CommonOrderingAPI"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Common/Core",
+    "abbr": "coa",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Common",
+    "additionalRoutes": [
+      "/Common"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "com",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Chillers Reports API",
+    "additionalRoutes": [
+      "/Chillers.Reports"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "cra",
+    "type": "app",
+    "aspIndex": 4
+  },
+  {
+    "name": "Request Delegator",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "crd",
+    "type": "functionapp",
+    "aspIndex": 1,
+    "preWarmedInstanceCount": 5
+  },
+  {
+    "name": "AECWorks Ratings Engine",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "creae",
+    "type": "functionapp",
+    "aspIndex": 1
+  },
+  {
+    "name": "Armstrong Ratings Engine",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "crear",
+    "type": "functionapp",
+    "aspIndex": 2,
+    "preWarmedInstanceCount": 5
+  },
+  {
+    "name": "DXChill Ratings Engine",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "cred",
+    "type": "functionapp",
+    "aspIndex": 5
+  },
+  {
+    "name": "HiselA Ratings Engine",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "creh",
+    "type": "functionapp",
+    "aspIndex": 1
+  },
+  {
+    "name": "Interpolation Ratings Engine",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "crei",
+    "type": "functionapp",
+    "aspIndex": 1
+  },
+  {
+    "name": "LTC Ratings Engine",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "crel",
+    "type": "functionapp",
+    "aspIndex": 1,
+    "preWarmedInstanceCount": 5
+  },
+  {
+    "name": "Xengine Ratings Engine",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "crex",
+    "type": "functionapp",
+    "aspIndex": 1
+  },
+  {
+    "name": "Chillers Rating Service",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "crs",
+    "type": "app",
+    "aspIndex": 4
+  },
+  {
+    "name": "Controller Selection Algorithm Tool",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "csat",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "Chillers Sub Batch Orchestrator",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "csbo",
+    "type": "functionapp",
+    "aspIndex": 2,
+    "preWarmedInstanceCount": 5
+  },
+  {
+    "name": "CSPS API",
+    "additionalRoutes": [
+      "/Chillers.CSPS.API"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Chillers",
+    "abbr": "cspsa",
+    "type": "app",
+    "aspIndex": 4
+  },
+  {
+    "name": "Unit Rating Orchestrator",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Chillers",
+    "abbr": "cuo",
+    "type": "functionapp",
+    "aspIndex": 2,
+    "preWarmedInstanceCount": 5
+  },
+  {
+    "name": "Doc Data Feeder (Cloud)",
+    "additionalRoutes": [
+      "/DocDataFeeder"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "ddf",
+    "type": "app",
+    "aspIndex": 5
+  },
+  {
+    "name": "Document Generation (Cloud)",
+    "additionalRoutes": [
+      "/DocumentGeneration"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Document Generation",
+    "abbr": "dg",
+    "type": "app",
+    "aspIndex": 5
+  },
+  {
+    "name": "Document Generation Broker (Cloud)",
+    "additionalRoutes": [
+      "/DocumentGenerationBroker"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "dgb",
+    "type": "app",
+    "aspIndex": 5,
+    "hybridConnections": [ { "port": 25, "hostname": "smtp.cg.jci.com" } ]
+  },
+  {
+    "name": "Doc Gen Background Processor",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "dgbp",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "Document Rendering Service",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope"
+    ],
+    "group": "AHU",
+    "abbr": "drs",
+    "type": "app",
+    "aspIndex": 1,
+    "hybridConnections": [ 
+      { "hostname": "j030m0wx", "port": 80, "filters": [ "dev2", "dev" ] },
+      { "hostname": "j030m1i4", "port": 80, "filters": [ "qa", "sit" ] },
+      { "hostname": "j030m1ic", "port": 80, "filters": [ "ppe", "prod" ] }
+    ]
+  },
+  {
+    "name": "Design System Manager",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "dsm",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Doc Update Engine (Cloud)",
+    "additionalRoutes": [
+      "/DocUpdateEngine"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "due",
+    "type": "app",
+    "aspIndex": 5
+  },
+  {
+    "name": "Estimating API (Cloud)",
+    "additionalRoutes": [
+      "/EstimatingAPI"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Estimating",
+    "abbr": "ea",
+    "type": "app",
+    "aspIndex": 5
+  },
+  {
+    "name": "Electrical Budget Estimate (Cloud)",
+    "additionalRoutes": [
+      "/EBE"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "ebe",
+    "type": "app",
+    "aspIndex": 3
+  },
+  {
+    "name": "Estimating Background Processor",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Estimating",
+    "abbr": "ebp",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "Edge Background Processor",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Edge",
+    "abbr": "edbp",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "Edge (Cloud)",
+    "additionalRoutes": [
+      "/Edge"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Edge",
+    "abbr": "edge",
+    "type": "app",
+    "aspIndex": 6,
+    "hybridConnections": [ { "port": 25, "hostname": "smtp.cg.jci.com" } ]
+  },
+  {
+    "name": "Ecrion Engine (Cloud)",
+    "additionalRoutes": [
+      "/EcrionEngine"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "ee",
+    "type": "app",
+    "aspIndex": 5
+  },
+  {
+    "name": "Ecrion Engine Background Processor",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "eebp",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "Excel Generation (Cloud)",
+    "additionalRoutes": [
+      "/ExcelGeneration"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "eg",
+    "type": "app",
+    "aspIndex": 5,
+    "hybridConnections": [
+      {"hostname":"j030m02m.go.johnsoncontrols.com","port":53605,"filters":["dev2"]},
+      {"hostname":"j030m02i.go.johnsoncontrols.com","port":53605,"filters":["dev2"]},
+      {"hostname":"j030m02i.go.johnsoncontrols.com","port":63875,"filters":["dev2"]},
+      {"hostname":"j030m02e.go.johnsoncontrols.com","port":53605,"filters":["dev2"]},
+      {"hostname":"j030m02e.go.johnsoncontrols.com","port":58286,"filters":["dev2"]},
+      {"hostname":"j030m0al.go.johnsoncontrols.com","port":53605,"filters":["dev"]},
+      {"hostname":"j030m0bc.go.johnsoncontrols.com","port":53605,"filters":["dev"]},
+      {"hostname":"j030m0ati.go.johnsoncontrols.com","port":53605,"filters":["dev"]},
+      {"hostname":"j030m0ah.go.johnsoncontrols.com","port":53605,"filters":["qa"]},
+      {"hostname":"j030m05g.go.johnsoncontrols.com","port":53605,"filters":["qa"]},
+      {"hostname":"j030m0ai.go.johnsoncontrols.com","port":53605,"filters":["qa"]},
+      {"hostname":"j030m02s.go.johnsoncontrols.com","port":53605,"filters":["sit"]},
+      {"hostname":"j030m02t.go.johnsoncontrols.com","port":53605,"filters":["sit"]},
+      {"hostname":"j030m02x.go.johnsoncontrols.com","port":53605,"filters":["sit"]},
+      {"hostname":"j030m07l.go.johnsoncontrols.com","port":53605,"filters":["ppe"]},
+      {"hostname":"j030m07x.go.johnsoncontrols.com","port":53605,"filters":["ppe"]},
+      {"hostname":"j030m07c.go.johnsoncontrols.com","port":53605,"filters":["ppe"]},
+      {"hostname":"j030M0bk.go.johnsoncontrols.com","port":53605,"filters":["prod"]},
+      {"hostname":"j030m4tev1n.go.johnsoncontrols.com","port":53605,"filters":["prod"]},
+      {"hostname":"j030m4tev1r.go.johnsoncontrols.com","port":53605,"filters":["prod"]},
+      {"hostname":"j030m4tev1s.go.johnsoncontrols.com","port":53605,"filters":["prod"]}
+    ]
+  },
+  {
+    "name": "Estimate Item Search API",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Estimating",
+    "abbr": "eis",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Edge Ordering (Cloud)",
+    "additionalRoutes": [
+      "/EdgeOrder"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Edge",
+    "abbr": "eo",
+    "type": "app",
+    "aspIndex": 1,
+    "hybridConnections": [
+      {"hostname":"smtp.cg.jci.com","port":25},
+      {"hostname":"as-ahu-test-jci-largo-order-api.azurewebsites.net","port":443,"filters":["dev2","dev","qa","sit","ppe"]},
+      {"hostname":"as-ahu-prod-jci-largo-order-api.azurewebsites.net","port":443,"filters":["prod"]}
+    ]
+  },
+  {
+    "name": "Estimating (Cloud)",
+    "additionalRoutes": [
+      "/Estimating"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Estimating",
+    "abbr": "est",
+    "type": "app",
+    "aspIndex": 5,
+    "hybridConnections": [
+      {"hostname":"corpsftp-nonprd.johnsoncontrols.com","port":22,"filters":["dev2","dev","qa","sit","ppe"]},
+      {"hostname":"corpsftp-prd.johnsoncontrols.com","port":22,"filters":["prod"]}
+    ]
+  },
+  {
+    "name": "Fire Detection (Cloud)",
+    "additionalRoutes": [
+      "/FireDetection"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Fire Detection",
+    "abbr": "fd",
+    "type": "app",
+    "aspIndex": 3,
+    "hybridConnections": [ { "port": 25, "hostname": "smtp.cg.jci.com" } ]
+  },
+  {
+    "name": "Fire Detection API",
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Fire Detection",
+    "abbr": "fda",
+    "type": "app",
+    "aspIndex": 3
+  },
+  {
+    "name": "Fire Detection Background Processor",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Fire Detection",
+    "abbr": "fdbp",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "Factory Package Controls",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "fpc",
+    "type": "app",
+    "aspIndex": 3,
+    "hybridConnections": [ { "port": 25, "hostname": "smtp.cg.jci.com" } ]
+  },
+  {
+    "name": "Factory Package Controls DocGen",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "SysControls",
+    "abbr": "fpcdg",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "Gryphon",
+    "additionalRoutes": [
+      "/Gryphon"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "AppliedDX",
+    "abbr": "gry",
+    "type": "app",
+    "aspIndex": 6,
+    "hybridConnections": [ { "port": 25, "hostname": "smtp.cg.jci.com" } ]
+  },
+  {
+    "name": "Item Import Service",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Estimating",
+    "abbr": "iis",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Item API",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "ita",
+    "type": "app",
+    "aspIndex": 5,
+    "kvAppSettings": {
+      "SelNavSharedAuthV2:AspNetSharedAuthV1ExpiryTimeoutMinutes": "AspNetSharedAuthV1ExpiryTimeoutMinutes"
+    }
+  },
+  {
+    "name": "Item Background Processor",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "itbp",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "JCDS Engine (Cloud)",
+    "additionalRoutes": [
+      "/JCDSEngine"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "jcdse",
+    "type": "app",
+    "aspIndex": 5,
+    "hybridConnections": [
+      {"hostname":"tm-yw-clst1-dev.jci.com","port":443,"filters":["dev2","dev","qa"]},
+      {"hostname":"tm-yw-clst-prod.jci.com","port":443,"filters":["sit","ppe","prod"]},
+      {"hostname":"j030m0wx","port":80,"filters":["dev2","dev"]},
+      {"hostname":"j030m1i4","port":80,"filters":["qa","sit"]},
+      {"hostname":"j030m1ic","port":80,"filters":["ppe","prod"]}]
+  },
+  {
+    "name": "JCDS Engine Background Processor",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "jcdsebp",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "Largo",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Edge",
+    "abbr": "lar",
+    "type": "app",
+    "aspIndex": 6
+  },
+  {
+    "name": "Merge PDF Engine (Cloud)",
+    "additionalRoutes": [
+      "/MergePdfEngine"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "mpe",
+    "type": "app",
+    "aspIndex": 5
+  },
+  {
+    "name": "Merge PDF Engine Background Processor",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Document Generation",
+    "abbr": "mpebp",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "name": "Product Application Selector",
+    "additionalRoutes": [
+      "/ProductApplicationSelector"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "pas",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Product Documentation API",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "pda",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Selection Portal",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "por",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Product Selection (Cloud)",
+    "additionalRoutes": [
+      "/ProductSelection"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "ps",
+    "type": "app",
+    "aspIndex": 3
+  },
+  {
+    "name": "Point Schedule Matrix Tool",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "psm",
+    "type": "app",
+    "aspIndex": 3
+  },
+  {
+    "name": "Shared Services",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "shs",
+    "type": "app",
+    "aspIndex": 5,
+    "appSettings": {},
+    "kvAppSettings": {
+      "Tenant:1:ConsumerKey": "Tenant1-ConsumerKey",
+      "Tenant:1:ConsumerSecret": "Tenant1-ConsumerSecret",
+      "Tenant:2:ConsumerKey": "Tenant2-ConsumerKey",
+      "Tenant:2:ConsumerSecret": "Tenant2-ConsumerSecret",
+      "Tenant:3:ClientId": "Tenant3-ClientId",
+      "Tenant:3:ClientSecret": "Tenant3-ClientSecret",
+      "Tenant:4:Salesforce:ClientId": "Tenant4-Salesforce-ClientId",
+      "Tenant:4:Salesforce:ClientSecret": "Tenant4-Salesforce-ClientSecret",
+      "Tenant:4:Oracle:ClientId": "Tenant4-Oracle-ClientId",
+      "Tenant:4:Oracle:ClientSecret": "Tenant4-Oracle-ClientSecret",
+      "Tenant:4:Oracle:SecondaryContext:Username": "Tenant4-Oracle-Username",
+      "Tenant:4:Oracle:SecondaryContext:Password": "Tenant4-Oracle-Password",
+      "SalesforceLogin:UserId": "SFDCUsername",
+      "SalesforceLogin:Password": "SFDCPassword",
+      "SalesforceLogin:ConsumerKey": "Tenant1-ConsumerKey",
+      "SalesforceLogin:ConsumerSecret": "Tenant1-ConsumerSecret",
+      "SalesforceLogin:RefreshToken": "Tenant1-RefreshToken",
+      "SelNavSharedAuthV2:AspNetSharedAuthV1ExpiryTimeoutMinutes": "AspNetSharedAuthV1ExpiryTimeoutMinutes"
+    },
+    "groupRoleAssignments": [
+      {
+        "group": "SelNav-Azure-Refresh",
+        "roles": [
+          "SelNav AppService Configuration Contributor"
+        ],
+        "filters": [
+          "dev2",
+          "dev",
+          "qa",
+          "sit",
+          "ppe"
+        ]
+      }
+    ],
+    "appInsightsDataCap": [
+      "prod:20"
+    ],
+    "netFrameworkVersion": null,
+    "use32BitWorkerProcess": null
+  },
+  {
+    "name": "Shared Location Cleanup",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Common/Core",
+    "abbr": "slc",
+    "type": "functionapp",
+    "aspIndex": 4
+  },
+  {
+    "abbr": "snlm",
+    "type": "functionapp",
+    "locations": [
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "aspIndex": 4,
+    "netFrameworkVersion": null,
+    "use32BitWorkerProcess": null
+  },
+  {
+    "name": "Special Pricing Requests",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "Common/Core",
+    "abbr": "spr",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Special Requests",
+    "additionalRoutes": [
+      "/SpecialRequestUI"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "Common/Core",
+    "abbr": "sr",
+    "type": "app",
+    "aspIndex": 1,
+    "hybridConnections": [ { "port": 25, "hostname": "smtp.cg.jci.com" } ]
+  },
+  {
+    "name": "System Selection (Cloud)",
+    "additionalRoutes": [
+      "/SystemSelection"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "ss",
+    "type": "app",
+    "aspIndex": 3,
+    "hybridConnections": [
+      {"hostname":"j030m02i.go.johnsoncontrols.com","port":44404,"filters":["dev2"]},
+      {"hostname":"j030m02k.go.johnsoncontrols.com","port":44405,"filters":["dev2"]},
+      {"hostname":"j030m02k.go.johnsoncontrols.com","port":44406,"filters":["dev2"]},
+      {"hostname":"j030m02m.go.johnsoncontrols.com","port":44405,"filters":["dev2"]},
+      {"hostname":"j030m02m.go.johnsoncontrols.com","port":44406,"filters":["dev2"]},
+      {"hostname":"j030m4tev0w.go.johnsoncontrols.com","port":44405,"filters":["dev"]},
+      {"hostname":"j030m0al.go.johnsoncontrols.com","port":44404,"filters":["dev"]},
+      {"hostname":"j030m0li.go.johnsoncontrols.com","port":44405,"filters":["dev"]},
+      {"hostname":"j030m0li.go.johnsoncontrols.com","port":44406,"filters":["dev"]},
+      {"hostname":"j030m0bc.go.johnsoncontrols.com","port":44404,"filters":["dev"]},
+      {"hostname":"j030m0at.go.johnsoncontrols.com","port":44405,"filters":["dev"]},
+      {"hostname":"j030m0at.go.johnsoncontrols.com","port":44406,"filters":["dev"]},
+      {"hostname":"j030m09h.go.johnsoncontrols.com","port":44404,"filters":["qa"]},
+      {"hostname":"j030m4tev09.go.johnsoncontrols.com","port":44405,"filters":["qa"]},
+      {"hostname":"j030m0lk.go.johnsoncontrols.com","port":44405,"filters":["qa"]},
+      {"hostname":"j030m0lk.go.johnsoncontrols.com","port":44406,"filters":["qa"]},
+      {"hostname":"j030m0ah.go.johnsoncontrols.com","port":44405,"filters":["qa"]},
+      {"hostname":"j030m0ah.go.johnsoncontrols.com","port":44406,"filters":["qa"]},
+      {"hostname":"j030m0ai.go.johnsoncontrols.com","port":44404,"filters":["qa"]},
+      {"hostname":"j030m05g.go.johnsoncontrols.com","port":44404,"filters":["qa"]}
+    ]
+  },
+  {
+    "name": "SS Panel Selection",
+    "additionalRoutes": [
+      "/SSPanelSelection"
+    ],
+    "locations": [
+      "southeastasia",
+      "westeurope",
+      "southeastasia"
+    ],
+    "group": "SysControls",
+    "abbr": "ssps",
+    "type": "app",
+    "aspIndex": 3
+  },
+  {
+    "name": "UPG Order API",
+    "additionalRoutes": [
+      "/UPGOrderAPI"
+    ],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "AppliedDX",
+    "abbr": "uoa",
+    "type": "app",
+    "aspIndex": 1
+  },
+  {
+    "name": "Video Bandwidth Configurator",
+    "additionalRoutes": [],
+    "locations": [
+      "southeastasia",
+      "centralus"
+    ],
+    "group": "SysControls",
+    "abbr": "vbc",
+    "type": "app",
+    "aspIndex": 3
+  }
+]
