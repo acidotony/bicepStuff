@@ -112,11 +112,106 @@ Modules referenced by Top-Level modules for creating categorized groups of resou
 - **Resources**: Defines Controls applications, SQL databases, and event hubs for the region.
 - **Outputs**: None.
 
+#### `sn-region-documentGenerator.bicep`
+- **Description**:  
+  Deploys all regional resources required for **Document Generation** applications in Selection Navigator.  
+  This module:
+  - Loads environment-specific settings (tags, location, Log Analytics workspace, etc.) from JSON lookups.
+  - Filters and deploys only the Document Generation–grouped SQL databases and web/function apps for the current region.
+  - Wires in shared storage account and network/subnet references.
+  - Applies runtime app settings.
+  - Assigns RBAC roles for the Document Generation group and any application-specific overrides.
+
+- **Parameters**:
+
+| Name                      | Type      | Description                                                                                                                                                      | Default | Allowed Values                         |
+|---------------------------|-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|----------------------------------------|
+| `environmentName`         | string    | The environment to deploy to.                                                                                                                                     | `dev2`  | `dev2`, `dev`, `qa`, `sit`, `ppe`, `prod` |
+| `tags`                    | object    | Tags to apply to all deployed resources.                                                                                                                         |         |                                        |
+| `sharedStorageAccountName`| string?   | The name of an existing, shared storage account. If omitted, a default name is generated with date suffix (e.g., `stsn<env><location>03062025`).                 |         |                                        |
+
+- **Variables**:
+
+| Name                         | Description                                                                                          |
+|------------------------------|------------------------------------------------------------------------------------------------------|
+| `environment`                | Loads environment-specific settings from `environment.json`.                         |
+| `location`                   | Uses the current resource group's location.                                                          |
+| `logAnalyticsWorkspaces`     | Loads Log Analytics workspace info from `logAnalyticsWorkspace.json`.                 |
+| `applications`               | Filters `sn-application.json` for Document Generation apps in the region.                            |
+| `sqlDatabases`               | Filters `sn-sqldatabase.json` for Document Generation DBs in the region.                             |
+| `kvAppSettings`              | Merges security and LaunchDarkly Key Vault settings with app-specific entries.                      |
+| `virtualNetworkName`         | Constructed as `vnet-sn-<env>-<location>-001`.                                                       |
+| `sharedStorageAccountNameValue` | Resolved shared storage account name, using date-based suffix if not provided.                       |
+| `documentGeneratorGroupRoleAssignments` | Assigns default Contributor role to SysControls group in non-prod environments.             |
+
+- **Modules and Resources**:
+
+| Name                      | Type / Module Path                                 | Description                                                                                                                                                           |
+|---------------------------|----------------------------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `appServicePlans`         | `Microsoft.Web/serverfarms@2024-04-01` (existing)  | References up to 9 App Service Plans per region.                                                                                                                      |
+| `functionAppServicePlans` | `Microsoft.Web/serverfarms@2024-04-01` (existing)  | References up to 9 Function App Service Plans per region.                                                                                                             |
+| `sharedStorageAccount`    | `Microsoft.Storage/storageAccounts@2023-01-01` (existing) | References an existing shared storage account.                                                                                                                  |
+| `sqlDatabasesModule`      | `module '../modules/sn-sqlDatabase.bicep'`         | Iterates over filtered Document Generation SQL DBs, setting name, server, pool, and collation.                                                                       |
+| `applicationsModule`      | `module './sn-site.bicep'`                         | Iterates over filtered Document Generation apps, deploying each with site-specific and environment-specific parameters including VNet, Key Vault, and AFD integration. |
+
+- **Outputs**:  
+  This module does not emit any outputs directly. Child modules handle their own outputs.
+
 #### `sn-region-edge.bicep`
-- **Description**: Deploys Edge group resources for a region, including edge services and associated infrastructure components.
-- **Parameters**: See module for parameter definitions.
-- **Resources**: Defines Edge applications, storage, and networking for edge workloads.
-- **Outputs**: None.
+
+- **Description**:  
+  Deploys all regional resources required for **Edge** applications in Selection Navigator.  
+  This module:
+  - Loads environment-specific settings (tags, location, Log Analytics workspace, etc.) from JSON lookups.
+  - Filters and deploys only the Edge–grouped SQL databases and web/function apps for the current region.
+  - Wires in shared storage account and network/subnet references.
+  - Applies runtime app settings and Key Vault app settings.
+  - Assigns RBAC roles for the Edge group and any application-specific overrides.
+
+- **Parameters**:
+
+| Name                      | Type      | Description                                                                                                                                                       | Default | Allowed Values                            |
+|---------------------------|-----------|-------------------------------------------------------------------------------------------------------------------------------------------------------------------|---------|-------------------------------------------|
+| `environmentName`         | string    | The environment to deploy to.                                                                                                                                      | `dev2`  | `dev2`, `dev`, `qa`, `sit`, `ppe`, `prod` |
+| `tags`                    | object    | Tags to apply to all deployed resources.                                                                                                                          |         |                                           |
+| `sharedStorageAccountName`| string?   | The name of an existing, shared storage account. If omitted, a default name is generated (e.g., `stsn<env><location>`).                                           |         |                                           |
+
+- **Variables**:
+
+| Name                         | Definition                                                                                                                                                                                                                              | Description                                                                                      |
+|------------------------------|-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|--------------------------------------------------------------------------------------------------|
+| `environment`                | `loadJsonContent('../data/environment.json')['sn-${environmentName}']`                                                                                                                           | Loads environment settings (subscription IDs, Key Vault names, etc.)                             |
+| `location`                   | `az.resourceGroup().location`                                                                                                                                                                    | Uses the resource group’s location for all regional deployments.                                 |
+| `logAnalyticsWorkspaces`     | `loadJsonContent('../data/logAnalyticsWorkspace.json')`                                                                                                                                          | Loads Log Analytics workspace names and RGs per environment.                                     |
+| `applications`               | `loadJsonContent('../data/sn-application.json')`                                                                                                                                                 | Reads the full list of Selection Navigator applications; used for filtering Edge apps.           |
+| `sqlDatabases`               | `loadJsonContent('../data/sn-sqldatabase.json')`                                                                                                                                                 | Reads the full list of SQL database definitions; used for filtering Edge databases.              |
+| `kvAppSettings`              | `loadJsonContent('../data/sn-kvAppSettings.json')`                                                                                                                                               | Loads Key Vault–related app settings (e.g., secrets scopes, labels).                             |
+| `virtualNetworkIndexSuffix`  | `1`                                                                                                                                                                                             | Numeric suffix for building the VNet name (always “001” for Edge).                               |
+| `virtualNetworkName`         | ``vnet-sn-${environment.name}-${location}-${format('{0:000}', virtualNetworkIndexSuffix)}``                                                                                                      | Constructs the regional VNet name, e.g., `vnet-sn-prod-eastus2-001`.                             |
+| `sharedStorageAccountNameValue` | `sharedStorageAccountName ?? 'stsn${environment.name}${location}'`                                                                                                                           | Uses the provided shared storage account or generates a default name if none is passed.          |
+| `appliedGroupRoleAssignments` | `[ { group: 'SelNav-Azure-AppDev-Edge', roles: ['Contributor'], filters: ['dev2','dev','qa'] } ]`                                                                                              | Default RBAC assignment for the Edge group across non-production environments.                   |
+| `groupName`                  | `'Edge'`                                                                                                                                                                                        | Application group targeted by this module.                                                       |
+| `filteredApplications`       | `filter(applications, application => (!contains(application, 'locations') || contains(application.locations, location)) && (contains(application, 'group') && application.group == groupName))` | List of Edge applications relevant to this region/location.                                      |
+| `filteredSqlDatabases`       | `filter(sqlDatabases, sqlDatabase => (!contains(sqlDatabase, 'locations') || contains(sqlDatabase.locations, location)) && (contains(sqlDatabase, 'group') && sqlDatabase.group == groupName))` | List of Edge SQL databases relevant to this region/location.                                     |
+
+- **Modules and Resources**:
+
+| Name                      | Type / Module Path                                       | Description                                                                                                                                                                                                                                                                                                                                                              |
+|---------------------------|----------------------------------------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
+| `appServicePlans`         | `resource Microsoft.Web/serverfarms@2024-04-01 existing` (array)  | References up to 9 existing App Service Plans named `aj-asp-sn-<env>-<location>-<index>` (for hosting web apps).                                                                                                                                                                                                                                                         |
+| `functionAppServicePlans` | `resource Microsoft.Web/serverfarms@2024-04-01 existing` (array)  | References up to 9 existing Function App Service Plans named `aj-asp-sn-<env>-<location>-fn-<index>`.                                                                                                                                                                                                                            |
+| `sharedStorageAccount`    | `resource Microsoft.Storage/storageAccounts@2023-01-01 existing`   | References the existing shared storage account (either passed in or default-generated).                                                                                                                                                                                                                                            |
+| `sqlDatabasesModule`      | `module '../modules/sn-sqlDatabase.bicep'`                | Iterates over each item in `filteredSqlDatabases`, and for each:  
+  • Names the SQL DB `SqlDatabase-<databaseName>` (up to 64 chars).  
+  • Passes `tags`, `name`, `sqlServerName` (built from `environment.name` and RG index), optional `elasticPoolName`, optional `catalogCollation`/`collation`.  
+  Deploys all region-specific Edge SQL DBs. |
+| `applicationsModule`      | `module './sn-site.bicep'`                                | Iterates over each item in `filteredApplications`, and for each:  
+  • Generates a unique site name via `sn.CreateSiteName(environment.name, location, application.type, application.abbr)`.  
+  • Passes `environment`, `tags`, `appAbbreviation`, `kind` (app or function), `appServicePlanId` or `functionAppServicePlanId`, merged `appSettings`, `keyVaultName`, `kvAppSettings` (merged), `logAnalyticsWorkspaceId`, `appInsightsDataCap` (via `P()` function), `subnetId`, `minimumAppInstances`, `storageAccountId`, `groupRoleAssignments` (merged with application overrides), optional `hybridConnections`, `netFrameworkVersion`, `use32BitWorkerProcess`.  
+  Deploys all Edge-grouped web or function apps. |
+
+- **Outputs**:  
+  This module does not emit any outputs directly. All child modules (`sn-sqlDatabase.bicep` and `sn-site.bicep`) handle their own outputs.
 
 #### `sn-region-est.bicep`
 - **Description**: Deploys EST group resources for a region, including application deployments and required infrastructure.
